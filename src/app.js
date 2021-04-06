@@ -31,7 +31,7 @@ app.get('', (req, res) => {
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        title: 'This is about page',
+        title: '',
         description: 'About page contains the description of the about',
         name: 'Peter Khalko'
 
@@ -69,7 +69,7 @@ app.get('/weather', (req, res) => {
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        title: 'This is help page',
+        title: '',
         description: 'help page contains the description',
         name: 'Peter Khalko'
     })
@@ -94,6 +94,5 @@ app.get('*', (req, res) => {
 })
 
 app.listen(port, () => {
-
     console.log('Express server started');
 })
