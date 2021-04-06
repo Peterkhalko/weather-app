@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weatherly</title>
+  <link rel="shortcut icon" href="/img/weather.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awsome/css/all.css">
+  <link rel="stylesheet" href="/font-awsome/js/fontawesome.min.js">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/Md Bootstrap/css/mdb.min.css">
+
+</head>
+
+<body>
+  <div class="wrapper-body"> </div>
+  <div class="container justify-content-center">
+    <div class="main-content">
+      {{>header}}
+      
+      <p class="body-object">Start with Your location!</p>
+      <div class="form-search">
+        <form class="d-flex">
+          <input class="form-control input-search me-2" type="search" placeholder="Search Location" aria-label="Search">
+          <button class="btn btn-secondary btn-rounded" type="submit">Search</button>
+        </form>
+        <div class="container spinner">
+          <hr>
+          <div class="row justify-content-center">
+            <button class="btn-sm btn-dark" type="button" disabled>
+              <span class="spinner-grow spinner-grow-sm " role="status" aria-hidden="true"></span>
+              Searching for Location...
+            </button>
+          </div>
+        </div>
+        
+      </div>
+<div class="container weather-forecast">
+  <hr>
+  <div class="row justify-content-center">
+
+<!-- Card -->
+<div class="card  col-sm-12 col-md-12">
+  <div class="card-body">
+    <h4 class="card-title text-center"></h4>
+    <div class="container row text-center" style="display: flex;flex-direction: row;">
+    <p class="card-text col-lg-6 col-sm-12 col-md-12 text-center"> </p>
+    <p class="col-lg-6 col-sm-12 col-md-12 weather-icon" style="border-radius: 50%;"><img id="myImg" src="" width="60" height="60" alt="weather image"style="border-radius: 50%;" >
+</i></p>
+    </div>
+    <a href="#" class="btn btn-primary btn-temperature"></a>
+  </div>
+
+</div>
+<!-- Card -->
+
+</div>
+
+</div>
+</div>      
+
+      {{!-- {{>fotter}} --}}
+    </div>
+
+    {{!-- Script --}}
+    <script src="js/app.js"></script>
+    <script src="/Md Bootstrap/js/mdb.min.js"></script>
+</body>
