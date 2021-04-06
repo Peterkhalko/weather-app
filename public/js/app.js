@@ -35,7 +35,7 @@ weatherForm.addEventListener('submit', (e) => {
                     cardTemperature.style.display = 'block'
                     cardLocation.innerHTML = `${data.location}`
                     cardCurrentWeather.innerHTML = 'Its ' +data.current_Weather+ ' in there'
-                    cardTemperature.innerHTML = `Temperature: <b>${data.temperature} &#8451; `
+                    cardTemperature.innerHTML = `Temperature : <b>${data.temperature} &#8451; `
                     spinner.style.display='none';    
                 },2000)
                
