@@ -7,15 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/Md Bootstrap/css/mdb.min.css">
 </head>
 
-<body>
-  <div class="main-content">
+<body style="color: white;">
+    <div class="main-content container">
+        {{title}}
         {{>header}}
         <h2>page is under development </h2>
+        <p>This site is created by Peter Khalko . <br> It uses <a href="https://www.mapbox.com/">mapbox</a> and <a
+                href="https://weatherstack.com/">weather stack</a> API</p>
     </div>
-    
-    {{>fotter}}
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-6 map-box-content" style="border: 1px solid white;">
+            Mapbox provides powerful routing engines, traffic-aware travel times, and intuitive turn-by-turn directions
+            to help you build engaging navigation experiences.
+        </div>
+        
+        <div class="col-lg-6 map-box-image" style="border: 1px solid white;">
+            <img src="/img/maptablet.PNG" alt="" srcset="" class="img-tablet">
+            <img src="/img/mapMobile.PNG" alt="" srcset="" class="img-mobile">
+        </div>
+        </div>
+    </div>
+   
 </body>
 
 </html>
