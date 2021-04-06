@@ -4,6 +4,7 @@ const app = express();
 const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
+const port = process.env || 3000
 //define paths for express config 
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, 'templates/views')
@@ -44,7 +45,7 @@ app.get('/weather', (req, res) => {
             error: 'You must provide Address  '
         })
     }
-    geocode(req.query.address, (error, geoData={}) => {
+    geocode(req.query.address, (error, geoData = {}) => {
         if (error) {
             res.send({
                 error: 'Please provide a valid address',
@@ -57,7 +58,7 @@ app.get('/weather', (req, res) => {
                     current_Weather: forecastData.description,
                     temperature: forecastData.temperature,
                     feelLikeTemperature: forecastData.feelslike,
-                    weather_icons:forecastData.weather_icons
+                    weather_icons: forecastData.weather_icons
                 })
             })
 
@@ -92,7 +93,7 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
 
     console.log('Express server started');
 })
