@@ -16,12 +16,11 @@
 </head>
 
 <body>
+  {{>header}}
   <div class="wrapper-body"> </div>
   <div class="container justify-content-center">
     <div class="main-content">
-      {{>header}}
-      
-      <p class="body-object">Start with Your location!</p>
+      <p class="body-object ">Start with Your location!</p>
       <div class="form-search">
         <form class="d-flex">
           <input class="form-control input-search me-2" type="search" placeholder="Search Location" aria-label="Search">
@@ -36,35 +35,41 @@
             </button>
           </div>
         </div>
-        
-      </div>
-<div class="container weather-forecast">
-  <hr>
-  <div class="row justify-content-center">
 
-<!-- Card -->
-<div class="card  col-sm-12 col-md-12">
-  <div class="card-body">
-    <h4 class="card-title text-center"></h4>
-    <div class="container row text-center" style="display: flex;flex-direction: row;">
-    <p class="card-text col-lg-6 col-sm-12 col-md-12 text-center"> </p>
-    <p class="col-lg-6 col-sm-12 col-md-12 weather-icon" style="border-radius: 50%;"><img id="myImg" src="" width="60" height="60" alt="weather image"style="border-radius: 50%;" >
-</i></p>
+      </div>
+      <div class="container weather-forecast">
+        <hr>
+        <div class="row justify-content-center">
+          <div class="card col-lg-6  col-sm-12 col-md-12">
+            <div class="card-body">
+              <h4 class="card-title text-center"></h4>
+              <div class="text-center">
+                <p class="card-text"></p>
+                <p class="card-text" style="border-radius: 50%;"><img id="myImg" src="" width="60" height="60"
+                    alt="weather image" style="border-radius: 50%;">
+                  </i></p>
+                <br>
+              </div>
+              <a href="#" class="btn btn-primary btn-temperature"></a>
+            </div>
+
+          </div>
+          <!-- Card -->
+
+        </div>
+
+      </div>
     </div>
-    <a href="#" class="btn btn-primary btn-temperature"></a>
+    <div class="container d-flex justify-content-center  m-4">
+      <div class="row">
+        <span> {{>fotter}} </span>
+
+      </div>
+    </div>
   </div>
 
-</div>
-<!-- Card -->
+  {{!-- Script --}}
+  <script src="js/app.js"></script>
 
-</div>
-
-</div>
-</div>      
-      {{!-- {{>fotter}} --}}
-    </div>
-
-    {{!-- Script --}}
-    <script src="js/app.js"></script>
-    <script src="/Md Bootstrap/js/mdb.min.js"></script>
+  <script src="/Md Bootstrap/js/mdb.min.js"></script>
 </body>

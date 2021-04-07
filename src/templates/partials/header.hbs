@@ -1,7 +1,48 @@
-<header>
-    <h1>{{title}} </h1>  
-    <a href="/">Weather</a>
-    <a href="/about">About</a>
-    <a href="/help">Help</a>
-    <a href="/">Covid track</a>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/Md Bootstrap/css/mdb.min.css">
+     <link rel="stylesheet" href="/font-awsome/css/all.css">
+  <link rel="stylesheet" href="/font-awsome/js/fontawesome.min.js">
+
+</head>
+<body>
+   <div class="container">
+           <a class="navbar-brand" href="/">  <h1>  {{title}} </h1></a> 
+   </div>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-">
+      
+  <div class="container"> 
+    <button
+      class="navbar-toggler text-light"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Weather</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/help">Help</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+</body>
+</html>

@@ -5,33 +5,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>coweather19-about</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="/Md Bootstrap/css/mdb.min.css">
-</head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+</head>
+{{>header}}
 <body style="color: white;">
-    <div class="main-content container">
-        {{title}}
-        {{>header}}
-        <h2>page is under development </h2>
-        <p>This site is created by Peter Khalko . <br> It uses <a href="https://www.mapbox.com/">mapbox</a> and <a
-                href="https://weatherstack.com/">weather stack</a> API</p>
+    
+    <div class="header container">
+       
     </div>
-    <div class="container">
-        <div class="row">
-        <div class="col-lg-6 map-box-content" style="border: 1px solid white;">
-            Mapbox provides powerful routing engines, traffic-aware travel times, and intuitive turn-by-turn directions
-            to help you build engaging navigation experiences.
-        </div>
-        
-        <div class="col-lg-6 map-box-image" style="border: 1px solid white;">
-            <img src="/img/maptablet.PNG" alt="" srcset="" class="img-tablet">
-            <img src="/img/mapMobile.PNG" alt="" srcset="" class="img-mobile">
-        </div>
+    <div class="main-content container text-center">
+
+        <h3>This site uses <a href="https://www.mapbox.com/">mapbox</a> and <a
+                href="https://weatherstack.com/">weatherstack</a> API</h3>
+
+        <hr>
+
+    </div>
+    <div class="container p-3">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-sm-12 col-md-12 map-box-content justify-content-center align-items-center text-center"
+                data-aos="fade-left" data-aos-duration="1000">
+                <h1>MapBox API</h1>
+                Mapbox provides powerful routing engines, traffic-aware travel times, and intuitive turn-by-turn
+                directions
+                to help you build engaging navigation experiences. <br>
+                <button type="button" class=" mt-3 btn btn-secondary btn-rounded"><a href="https://www.mapbox.com/">mapbox</a></button>
+
+            </div>
+
+            <div class=" col-lg-6 col-sm-12 col-md-12 order-1 order-md-2 order-sm-2">
+                <img src="/img/1.png" alt="" srcset="" data-aos="fade-right" data-aos-duration="3000" width="100%">
+
+            </div>
         </div>
     </div>
-   
+
+    <div class="container p-3" data-aos="fade-up" data-aos-duration="1000">
+        <div class="row align-items-center">
+
+            <div class=" col-lg-6 col-sm-12 col-md-12  order-2 order-md-1 order-sm-1">
+                <img src="/img/weather-stack-img.png" alt="" srcset="" data-aos="fade-right" data-aos-duration="3000"
+                    width="100%">
+
+            </div>
+            <div class="mb-5 col-lg-6 col-sm-12 col-md-12 map-box-content  order-md-1 text-center">
+                <h1>WeatherStack API</h1>
+                Initially launched in early 2015, the weatherstack API has slowly become the industry standard and one of the most popular solutions for global real-time weather information.
+                <br>
+                <button type="button" class="mt-3 btn btn-secondary btn-rounded"><a href="https://weatherstack.com/">weatherstack</a></button>
+            </div>
+        </div>
+    </div>
+<div class="container d-flex justify-content-center  m-4">
+      <div class="row">
+        <span> {{>fotter}} </span>
+
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+      <script src="/Md Bootstrap/js/mdb.min.js"></script>
+
 </body>
 
 </html>

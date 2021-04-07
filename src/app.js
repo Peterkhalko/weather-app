@@ -20,7 +20,7 @@ hbs.registerPartials(partialsPath)
 
 //root setup form search file travelling from here and serve the file
 app.use(express.static(publicDirectoryPath))
-app.get('', (req, res) => {
+app.get('/', (req, res) => {
     res.render('index', {
         title: 'Weatherly',
         description: 'Pune',
@@ -31,7 +31,7 @@ app.get('', (req, res) => {
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        title: 'About coweather19',
+        title: 'Weatherly',
         description: 'About page contains the description of the about',
         name: 'Peter Khalko'
 
@@ -69,7 +69,7 @@ app.get('/weather', (req, res) => {
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        title: '',
+        title: 'Weatherly',
         description: 'help page contains the description',
         name: 'Peter Khalko'
     })
