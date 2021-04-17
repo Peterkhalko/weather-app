@@ -38,6 +38,7 @@ app.get('/about', (req, res) => {
     })
 })
 
+//this route is called in client app.js with fetch and in the backend it replies the object 
 app.get('/weather', (req, res) => {
     //here if the !req.query.address is true flow exists and returns error: you must provide address
     if (!req.query.address) {
